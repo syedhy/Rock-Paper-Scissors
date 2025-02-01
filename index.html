@@ -9,14 +9,18 @@
 <body>
     
     <div class="A-wrapper">
-        <div class="status">
+        <div class="B-status">
             <h2>Play!</h2>
         </div>
 
         <div class="B-play">
             <div class="C-bobTurn">
-                <h3>BOB</h3>
-                <img class="youImg" src="" alt="fist">
+                <div class="D-verticalText">
+                    <span>B</span>
+                    <span>O</span>
+                    <span>B</span>
+                </div>
+                <img class="youImg" src="./imgs/rock.png" alt="fist">
             </div>
 
             <div class="C-vs">
@@ -24,39 +28,43 @@
             </div>
 
             <div class="C-youTurn">
-                <img class="youImg" alt="fist">
-                <h3>You</h3>
+                <img class="youImg" src="./imgs/rock.png" alt="fist">
+                <div class="D-verticalText">
+                    <span>Y</span>
+                    <span>O</span>
+                    <span>U</span>
+                </div>
             </div>
         </div>
 
         <div class="B-press">
-            <div id="rock">
-                <img src="" alt="rock">
+            <div class="C-choice" id="rock">
+                <img src="./imgs/rockIcon.png" alt="rock" >
             </div>
-            <div id="scissors">
-                <img src="" alt="scissor">
+            <div class="C-choice" id="scissors">
+                <img src="./imgs/paperIcon.png" alt="scissor">
             </div>
-            <div id="paper">
-                <img src="" alt="paper">
+            <div class="C-choice" id="paper">
+                <img src="./imgs/scissorIcon.png" alt="paper">
             </div>
         </div>
 
         <div class="B-score">
-            <div class="youScore">
+            <div class="C-youScore">
                 <p>You</p>
                 <p>0</p>
             </div>
-            <div class="sepr">
+            <div class="C-sepr">
                 <p>:</p>
             </div>
-            <div class="bobScore">
+            <div class="C-bobScore">
                 <p>0</p>
                 <p>Bob</p>
             </div>
         </div>
 
         <div class="B-new">
-            <button>New Game</button>
+            <button class="C-newBtn">New Game</button>
         </div>
 
 

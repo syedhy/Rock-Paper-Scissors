@@ -1,0 +1,158 @@
+* {
+    height: 100%;
+    margin: 0;
+}
+.A-wrapper {
+    background-color: rgb(255, 221, 97);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 5rem;
+}
+
+/* B section */
+.B-status {
+    text-align: center;
+    font-size: 3.5rem;
+}
+.B-play {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.B-press {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B-score {
+
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+    align-self: center;
+    font-size: 2rem;
+
+}
+
+.B-new {
+    background-color: rgb(255, 221, 97);
+    display: flex;
+    justify-content: center;
+}
+
+
+/* C section */
+.B-play .C-bobTurn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+}
+.B-play .C-vs {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 4vmin;
+}
+.B-play .C-youTurn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+}
+
+
+.B-press .C-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.B-score .C-youScore {
+    display: flex;
+    width: 15vmin;
+    justify-content: space-between;
+    text-align: center;
+}   
+.B-score .C-sepr {
+    text-align: center;
+}   
+.B-score .C-bobScore {
+    display: flex;
+    width: 15vmin;
+    justify-content: space-between;
+    text-align: center;
+}   
+
+
+.B-new .C-newBtn {
+    margin-top: 2rem;
+    height: 8vmin;
+    width: 15vmin;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(69, 168, 255);
+    font-size: 1.1rem;
+}
+.B-new .C-newBtn:hover {
+    background-color:rgb(115, 190, 255) ;
+}
+
+.B-play .C-bobTurn .D-verticalText  {   
+    font-size: 3vmin;
+    display: inline-block;
+    height: fit-content;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.B-play .C-youTurn .D-verticalText  {   
+    font-size: 3vmin;
+    display: inline-block;
+    height: fit-content;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Elements */
+.B-play .C-bobTurn img {
+    width: 20vmin;
+    height: 20vmin;
+
+    transform: rotate(90deg)
+}
+.B-play .C-youTurn img {
+    width: 20vmin;
+    height: 20vmin;
+    transform: scaleX(-1) rotate(90deg);
+
+}
+
+.B-press .C-choice img {
+    padding: 0px;
+    width: 5vmax;
+    height: 5vmax;
+    background-color: rgb(138, 193, 255);
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+.B-press .C-choice img:hover{
+    background-color: rgb(255, 253, 253);
+}
+
+.B-play .C-bobTurn .D-verticalText span{ 
+    padding: 0.8rem;
+}  
+.B-play .C-youTurn .D-verticalText span{ 
+    padding: 0.8rem;
+}  
