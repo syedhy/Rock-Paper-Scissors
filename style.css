@@ -30,7 +30,6 @@
 }
 
 .B-score {
-
     display: flex;
     justify-content: space-between;
     width: 35vw;
@@ -84,6 +83,8 @@
     text-align: center;
 }   
 .B-score .C-sepr {
+    justify-content: center;
+    align-items: center;
     font-size: 3vmin;
 }   
 .B-score .C-bobScore {
@@ -131,14 +132,12 @@
 .B-play .C-bobTurn img {
     width: 20vmin;
     height: 20vmin;
-
-    transform: rotate(90deg)
+    transform: scaleX(-1) rotate(90deg);
 }
 .B-play .C-youTurn img {
     width: 20vmin;
     height: 20vmin;
-    transform: scaleX(-1) rotate(90deg);
-
+    transform: rotate(90deg);
 }
 
 .B-press .C-choice img {
@@ -163,6 +162,12 @@
     padding: 0.8rem;
 }  
 
+.B-score .C-youScore p {
+    font-family: "Noto Sans JP", serif; 
+}
+.B-score .C-bobScore p {
+    font-family: "Noto Sans JP", serif; 
+}
 @media (max-width:650px) {
     .A-wrapper {
         height: 100vh;
@@ -178,7 +183,7 @@
     .B-play {
         scale: 1.4;
         margin-top: 7rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .B-press {
@@ -188,10 +193,11 @@
         justify-content: space-around;
         margin-top: 3rem;
         width: 60vmin;
+        align-items: center;
     }
 
     .B-play .C-bobTurn , .B-play .C-youTurn  {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .B-play .C-youTurn img {
         transform: rotate(0deg);
@@ -215,10 +221,16 @@
     }
 
     .C-youScore , .C-bobScore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0.5rem;
         width: 20rem;
     }
     .C-sepr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 2rem;
         text-align: center;
     }

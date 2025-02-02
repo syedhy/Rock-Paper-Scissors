@@ -19,7 +19,10 @@ const playGame = (youChoice) => {
     bobImg.src = `./imgs/${bobChoice}.png`;
 
     if (youChoice === bobChoice) {
-        gameStatus.innerText = "Draw"
+        gameStatus.innerText = "Draw";
+        var audio = new Audio("./sounds/Draw.mp3");
+        audio.volume = 0.3;
+        audio.play();
     }
     else {
         let youWin = true;
@@ -42,11 +45,17 @@ const showWinner = (youWin) => {
         gameStatus.innerText = "You Win"
         youScore++;
         youBoard.innerText = youScore;
+        var audio = new Audio("./sounds/Winner.mp3");
+        audio.volume = 0.3;
+        audio.play();
     }
     else{
         gameStatus.innerText = "You Lose"
         bobScore++;
         bobBoard.innerText = bobScore;
+        var audio = new Audio("./sounds/Lose.mp3");
+        audio.volume = 0.2;
+        audio.play();
     }
 }
 const genBobChoice = () => {
@@ -62,6 +71,8 @@ const genBobChoice = () => {
 
 youChoice.forEach((choice) => {
     choice.addEventListener("click" , () => {
+        var audio = new Audio("./sounds/KeyPress.mp3");
+        audio.play();
         let youId = choice.getAttribute("id");
         playGame(youId);
     })
