@@ -1,23 +1,24 @@
 * {
     height: 100%;
     margin: 0;
+    font-family: "Roboto Mono", serif;
 }
 .A-wrapper {
     background-color: rgb(255, 221, 97);
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 5rem;
 }
 
 /* B section */
 .B-status {
+    margin-top: 3.5rem;
     text-align: center;
     font-size: 3.5rem;
 }
 .B-play {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -92,12 +93,12 @@
 
 .B-new .C-newBtn {
     margin-top: 2rem;
-    height: 8vmin;
-    width: 15vmin;
-    border-radius: 1rem;
+    height: 5vmin;
+    width: 12vmin;
+    border-radius: 0.5rem;
     border: none;
     background-color: rgb(69, 168, 255);
-    font-size: 1.1rem;
+    font-size: 1.6vmin;
 }
 .B-new .C-newBtn:hover {
     background-color:rgb(115, 190, 255) ;
@@ -144,6 +145,7 @@
     border-radius: 50%;
     text-align: center;
     margin-right: 1.5rem;
+    padding: 0.5rem;
 }
 
 .B-press .C-choice img:hover{
