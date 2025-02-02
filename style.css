@@ -14,7 +14,7 @@
 .B-status {
     margin-top: 3.5rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4vmin;
 }
 .B-play {
     display: flex;
@@ -35,7 +35,9 @@
     justify-content: space-between;
     width: 35vw;
     align-self: center;
-    font-size: 2rem;
+    height: fit-content;
+    font-size: 2vmax;
+    margin-bottom: 5rem;
 
 }
 
@@ -51,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20vw;
+    width: 20rem;
 }
 .B-play .C-vs {
     display: flex;
@@ -63,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20vw;
+    width: 20rem;
 }
 
 
@@ -75,15 +77,17 @@
 
 
 .B-score .C-youScore {
+    font-size: 3vmin;
     display: flex;
     width: 15vmin;
     justify-content: space-between;
     text-align: center;
 }   
 .B-score .C-sepr {
-    text-align: center;
+    font-size: 3vmin;
 }   
 .B-score .C-bobScore {
+    font-size: 3vmin;
     display: flex;
     width: 15vmin;
     justify-content: space-between;
@@ -97,11 +101,11 @@
     width: 12vmin;
     border-radius: 0.5rem;
     border: none;
-    background-color: rgb(69, 168, 255);
+    background-color: rgb(138, 193, 255);
     font-size: 1.6vmin;
 }
 .B-new .C-newBtn:hover {
-    background-color:rgb(115, 190, 255) ;
+    background-color: rgb(255, 253, 253);
 }
 
 .B-play .C-bobTurn .D-verticalText  {   
@@ -144,7 +148,7 @@
     background-color: rgb(138, 193, 255);
     border-radius: 50%;
     text-align: center;
-    margin-right: 1.5rem;
+    margin: 1.5rem;
     padding: 0.5rem;
 }
 
@@ -158,3 +162,76 @@
 .B-play .C-youTurn .D-verticalText span{ 
     padding: 0.8rem;
 }  
+
+@media (max-width:650px) {
+    .A-wrapper {
+        height: 100vh;
+        min-width: 90vw;
+    }
+    .B-status {
+        text-align: center;
+        font-size: 7vmin;
+        height: fit-content;
+        margin-bottom: 3rem;
+    }
+
+    .B-play {
+        scale: 1.4;
+        margin-top: 7rem;
+        flex-direction: column;
+    }
+
+    .B-press {
+        margin-top: 6rem;
+    }
+    .B-score {
+        justify-content: space-around;
+        margin-top: 3rem;
+        width: 60vmin;
+    }
+
+    .B-play .C-bobTurn , .B-play .C-youTurn  {
+        flex-direction: column;
+    }
+    .B-play .C-youTurn img {
+        transform: rotate(0deg);
+    }  
+
+    .B-play .C-bobTurn img {
+        transform: rotate(180deg);
+    }  
+    .B-play .C-bobTurn .D-verticalText ,
+    .B-play .C-youTurn .D-verticalText  {
+        flex-direction: row;
+    }
+    .B-new .C-newBtn {
+        margin-top: 2rem;
+        height: 10vmin;
+        width: 20vmin;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: rgb(138, 193, 255);
+        font-size: 3.6vmin;
+    }
+
+    .C-youScore , .C-bobScore {
+        margin: 0.5rem;
+        width: 20rem;
+    }
+    .C-sepr {
+        width: 2rem;
+        text-align: center;
+    }
+
+    .C-youScore p , .C-sepr p , .C-bobScore p {
+        font-size: 5vmin;
+    }
+
+    .currScoreYou {
+        margin-left: 2rem;
+    }
+   .currScoreBob {
+        margin-right: 2rem;
+    }
+
+}
